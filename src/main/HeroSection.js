@@ -3,7 +3,9 @@ import banner from "../assets/banners/banner1.jpeg";
 import banner2 from "../assets/banners/banner2.jpeg";
 import banner3 from "../assets/banners/banner3.jpeg";
 import banner4 from "../assets/banners/banner4.jpeg";
-
+import { Product } from "../constant/Product";
+import { MenProduct } from "../constant/Product";
+import { kidsProduct } from "../constant/Product";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -121,64 +123,14 @@ const HeroSection = () => {
             </h1>
           </div>
           <div className="my-5 grid grid-cols-3 lg:grid-cols-4 ">
-            <div className="   flex justify-center items-center">
-              <div>
-                <img
-                  className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                  src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-women/yellow_girl.jpeg"
-                  alt="banner"
-                />
-              </div>
-            </div>
-            <div className="flex justify-center items-center">
+            {Product.map((item, index) => (
               <img
                 className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-women/blue_shirt_girl.jpeg"
+                src={item}
+                key={index}
                 alt="banner"
               />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-women/girls_top.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-women/peech_girl.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-women/slipper_girl.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-women/pyjama_girl.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-women/skirt_girl.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-women/jegging_girl.jpeg"
-                alt="banner"
-              />
-            </div>
+            ))}
           </div>
         </div>
 
@@ -192,91 +144,17 @@ const HeroSection = () => {
             </h1>
           </div>
           <div className="my-5 grid grid-cols-3 lg:grid-cols-4 ">
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-men/jamaicans_men.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-men/slipper_men.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-men/boxer_men.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-men/formal_shirt_men.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-men/kurta_men.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-men/T-shirt_men.jpeg"
-                alt="banner"
-              />
-            </div>
-
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-men/bermuda_men.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-men/shoes_men.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-men/sandaaa.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-men/joggers_men.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-men/pyjamas_men.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-men/casual_shirt.jpeg"
-                alt="banner"
-              />
-            </div>
+            {MenProduct.map((item, index) => (
+              <div className="flex justify-center items-center">
+                {" "}
+                <img
+                  className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
+                  src={item}
+                  key={index}
+                  alt="banner"
+                />
+              </div>
+            ))}
           </div>
         </div>
         {/* Men Product End */}
@@ -289,60 +167,16 @@ const HeroSection = () => {
             </h1>
           </div>
           <div className="my-5 grid grid-cols-3 lg:grid-cols-4 ">
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-kids/kids_shirts.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-kids/kid_sets-cbaabb.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-kids/kids_top.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-kids/kids_frocks.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-kids/kids_jackets.jpeg"
-                alt="banner"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-kids/kids_skirts.jpeg"
-                alt="banner"
-              />
-            </div> <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-kids/kids_dressess.jpeg"
-                alt="banner"
-              />
-            </div> <div className="flex justify-center items-center">
-              <img
-                className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
-                src="https://ecomm.dotvik.com/dist/images/homePageRoundImg-kids/kids_jeans.jpeg"
-                alt="banner"
-              />
-           </div>
+            {kidsProduct.map((item, index) => (
+              <div className="flex justify-center items-center">
+                <img
+                  className=" w-20 h-20 md:w-52 md:h-52 cursor-pointer "
+                  src={item}
+                  key={index}
+                  alt="banner"
+                />
+              </div>
+            ))}
           </div>
         </div>
         {/* Kids Product End */}
@@ -352,7 +186,7 @@ const HeroSection = () => {
         <h1 className="border-b-2 border-red-500 text-center font-barlow  text-xl md:text-3xl py-2">
           V2KART SPOTLIGHT
         </h1>
-      
+
         <div class="pt-4">
           <img
             className="w-screen h-[40vh] md:h-[80vh]"
@@ -367,14 +201,14 @@ const HeroSection = () => {
           IN THE SPOTLIGHT
         </h1>
 
-        <div class="pt-4 flex">
+        <div class="pt-4 grid grid-cols-2">
           <img
-            className="w-screen h-[40vh] md:h-[80vh]"
+            className=" h-[40vh] md:h-[80vh]"
             alt="img"
             src="https://ecomm.dotvik.com/dist/images/bannerTemp/fit-to-win.jpeg"
           />
           <img
-            className="w-screen h-[40vh] md:h-[80vh]"
+            className=" h-[40vh] md:h-[80vh]"
             alt="img"
             src="https://ecomm.dotvik.com/dist/images/bannerTemp/fashion_essentials.jpeg"
           />
